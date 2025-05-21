@@ -1,0 +1,73 @@
+@import 'colors.less';
+
+@import url('https://fonts.googleapis.com/css?family=Inter:300,700.css');
+
+#app-root-2025-tariffs .app {
+  aspect-ratio: 16/9;
+  background-color: #f2f8fc;
+  box-sizing: border-box;
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto auto;
+  max-width: 1200px;
+  padding-top: 20px;
+  a {
+    color: #000;
+  }
+  // Color variables (appears count calculates by raw css)
+  .slider-title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 10px;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  .slider-stack {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+      max-width: 450px;
+      width: 100%;
+      span {
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        text-align: center;
+        width: 150px;
+        strong {
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+      @media all and (max-width: 500px) {
+        span {
+          font-size: 14px;
+          strong {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    input {
+      cursor: pointer;
+      max-width: 300px;
+      width: 100%;
+      /* Webkit browsers: Chrome, Safari, Edge (Chromium) */
+      &::-webkit-slider-thumb {
+        background-color: @unblue;
+        border-radius: 11px;
+        border: 1px solid @unblue;
+      }
+      &[type="range"] {
+        accent-color: @unbluetext;
+      }
+    }
+  }
+}
+
+@import 'basics.less';
