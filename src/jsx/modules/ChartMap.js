@@ -484,7 +484,7 @@ const MapChart = () => {
           color: 'rgba(0, 0.0, 0.0, 0.8)',
           fontSize: '13px'
         },
-        text: '<em>Note:</em> <a href="https://unctad.org/page/map-disclaimer" target="_blank">Map disclaimer</a>',
+        text: '<em>Source:</em> UN Trade and Development (UNCTAD)<br /><em>Note:</em> <a href="https://unctad.org/page/map-disclaimer" target="_blank">Map disclaimer</a>',
         useHTML: true,
         verticalAlign: 'bottom',
         x: 0
@@ -587,6 +587,22 @@ const MapChart = () => {
           }
         }
       },
+      responsive: {
+        rules: [{
+          chartOptions: {
+            title: {
+              margin: 20,
+              style: {
+                fontSize: '26px',
+                lineHeight: '30px'
+              }
+            }
+          },
+          condition: {
+            maxWidth: 500
+          }
+        }]
+      },
       series: [
         {
           data: economiescolor.map(region => {
@@ -644,7 +660,6 @@ const MapChart = () => {
           type: 'map',
           visible: !bubbleMap
         },
-
         // Using the function to create mapline series
         createMaplineSeries('Dashed Borders', dashedborders, 'Dash'),
         createMaplineSeries('Dotted Borders', dottedborders, 'Dot'),
