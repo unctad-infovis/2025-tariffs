@@ -12,14 +12,14 @@ const MapChart = () => {
     const data_path = `${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2025-tariffs/' : (window.location.href.includes('localhost:80')) ? './' : 'https://unctad-infovis.github.io/2025-tariffs/'}assets/data/`;
 
     // Fetch the topology
-    const topology = await fetch(`${data_path}/worldmap-economies-54030.topo.json`).then(response => response.json());
+    const topology = await fetch(`${data_path}worldmap-economies-54030.topo.json`).then(response => response.json());
 
     // Fetch the user-specific data and settings files
-    const data = (await fetch(`${data_path}/data.json`).then(response => response.json()))
+    const data = (await fetch(`${data_path}data.json`).then(response => response.json()))
       .map(d => ({ ...d, code: String(d.code) }));
     window.mapData = data;
 
-    const settings = await fetch(`${data_path}/settings.json`).then(response => response.json());
+    const settings = await fetch(`${data_path}settings.json`).then(response => response.json());
 
     const allValues = data.map(d => parseFloat(d.value)).filter(v => !Number.isNaN(v));
     const minValue = Math.min(...allValues);
