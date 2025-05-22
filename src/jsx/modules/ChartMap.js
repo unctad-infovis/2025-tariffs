@@ -387,11 +387,10 @@ const MapChart = () => {
             states: {
               hover: {
                 halo: {
-                  size: 10
+                  size: 0
                 },
                 lineWidthPlus: 4,
                 marker: {
-                  fillOpacity: 1
                 },
                 opacity: 1
               },
@@ -484,7 +483,7 @@ const MapChart = () => {
           color: 'rgba(0, 0.0, 0.0, 0.8)',
           fontSize: '13px'
         },
-        text: '<em>Source:</em> UN Trade and Development (UNCTAD)<br /><em>Note:</em> <a href="https://unctad.org/page/map-disclaimer" target="_blank">Map disclaimer</a>',
+        text: '<em>Source:</em> UN Trade and Development (UNCTAD) based on UN Comtrade, UNCTAD TRAINS and Presidential actions, including the Executive Orders published by the White House.<br /><em>Note:</em> Trade weights for the year 2023. <a href="https://unctad.org/page/map-disclaimer" target="_blank">Map disclaimer</a>',
         useHTML: true,
         verticalAlign: 'bottom',
         x: 0
@@ -579,9 +578,9 @@ const MapChart = () => {
           }
         },
         mapline: {
-          lineWidth: settings.non_dw.lineWidth,
           borderWidth: settings.non_dw.lineWidth,
           color: '#fff',
+          lineWidth: settings.non_dw.lineWidth,
           tooltip: {
             enabled: false
           }

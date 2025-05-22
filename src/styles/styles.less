@@ -57,14 +57,21 @@
       cursor: pointer;
       max-width: 300px;
       width: 100%;
-      /* Webkit browsers: Chrome, Safari, Edge (Chromium) */
-      &::-webkit-slider-thumb {
-        background-color: @unblue;
-        border-radius: 11px;
-        border: 1px solid @unblue;
-      }
       &[type="range"] {
         accent-color: @unbluetext;
+        &::-webkit-slider-thumb {
+          background-color: @unblue;
+          border-radius: 11px;
+          border: 1px solid @unblue;
+        }
+        &:hover::-webkit-slider-thumb {
+          background-color: lighten(@unblue, 10%);
+          border-color: lighten(@unblue, 10%);
+        }
+        &:active::-webkit-slider-thumb {
+          background-color: darken(@unblue, 10%);
+          border-color: darken(@unblue, 10%);
+        }
       }
     }
   }
