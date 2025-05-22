@@ -493,8 +493,8 @@ const MapChart = () => {
         backgroundColor: '#f4f9fd',
         events: {
           load() {
-            const chart_this = this;
-            chart_this.renderer.image('https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg', 20, 20, 44, 43.88).add();
+            // const chart_this = this;
+            // chart_this.renderer.image('https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg', 20, 15, 44, 43.88).add();
           }
         },
         type: 'map'
@@ -590,7 +590,6 @@ const MapChart = () => {
         rules: [{
           chartOptions: {
             title: {
-              margin: 20,
               style: {
                 fontSize: '26px',
                 lineHeight: '30px'
@@ -684,16 +683,17 @@ const MapChart = () => {
         },
       ],
       subtitle: {
-        align: 'left',
         enabled: true,
+        minScale: 1,
         style: {
           color: 'rgba(0, 0, 0, 0.8)',
           fontSize: '16px',
           fontWeight: 400,
           lineHeight: '18px'
         },
-        text: 'subtitle',
-        widthAdjust: -90,
+        // text: '<div style="margin-right: 64px">Trade-weighted applied tariffs on US imports if all new tariffs, including country-specific ones, are applied</div>',
+        text: null,
+        useHTML: true,
         x: 64
       },
       tooltip: {
@@ -707,15 +707,16 @@ const MapChart = () => {
       },
       title: {
         align: 'left',
-        margin: 10,
+        minScale: 1,
         style: {
           color: '#000',
           fontSize: '30px',
           fontWeight: 700,
           lineHeight: '34px'
         },
-        text: 'Which tariffs',
-        widthAdjust: -90,
+        // text: '<div style="margin-right: 64px">Planned US tariffs are disruptively high for many vulnerable economies</div>',
+        text: null,
+        useHTML: true,
         x: 64,
         y: 25
       },

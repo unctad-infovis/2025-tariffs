@@ -18,6 +18,13 @@ function App() {
         {
           // Controls
         }
+        <div className="title_container">
+          <img src="https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg" className="logo" alt="UN Trade and Development logo" />
+          <div className="title">
+            <h3>Planned US tariffs are disruptively high for many vulnerable economies</h3>
+            <h4>Trade-weighted applied tariffs on US imports if all new tariffs, including country-specific ones, are applied</h4>
+          </div>
+        </div>
         <div id="controls" className="slider-wrapper">
           <div className="slider-stack">
             <div className="slider-labels">
@@ -48,7 +55,6 @@ function App() {
         }
         <div id="map_container" />
       </div>
-      <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );
 }
