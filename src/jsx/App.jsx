@@ -22,7 +22,7 @@ function App() {
           <img src="https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg" className="logo" alt="UN Trade and Development logo" />
           <div className="title">
             <h3>Planned US tariffs are disruptively high for many vulnerable economies</h3>
-            <h4>Trade-weighted applied tariffs on US imports if all new tariffs, including country-specific ones, are applied</h4>
+            <h4>Trade-weighted applied tariffs on US imports if country-specific tariffs are applied</h4>
           </div>
         </div>
         <div id="controls" className="slider-wrapper">
