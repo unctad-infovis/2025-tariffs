@@ -15,7 +15,7 @@ const MapChart = () => {
     const topology = await fetch(`${data_path}worldmap-economies-54030.topo.json`).then(response => response.json());
 
     // Fetch the user-specific data and settings files
-    const data = (await fetch(`${data_path}data.json?v=1`).then(response => response.json()))
+    const data = (await fetch(`${data_path}data.json?v=2`).then(response => response.json()))
       .map(d => ({ ...d, code: String(d.code) }));
     window.mapData = data;
 
