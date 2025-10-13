@@ -6685,7 +6685,7 @@
     "dev_status": "Developed",
     "tariff_structure": 1,
     "value": 1.9573,
-    "code": "579"
+    "code": "578"
   },
   {
     "ISO3": "NOR",
@@ -6701,7 +6701,7 @@
     "dev_status": "Developed",
     "tariff_structure": 2,
     "value": 9.0933,
-    "code": "579"
+    "code": "578"
   },
   {
     "ISO3": "NOR",
@@ -6717,7 +6717,7 @@
     "dev_status": "Developed",
     "tariff_structure": 3,
     "value": 11.9073,
-    "code": "579"
+    "code": "578"
   },
   {
     "ISO3": "SEN",
@@ -6925,7 +6925,7 @@
     "dev_status": "Developed",
     "tariff_structure": 1,
     "value": 2.2167,
-    "code": "757"
+    "code": "756"
   },
   {
     "ISO3": "CHE",
@@ -6941,7 +6941,7 @@
     "dev_status": "Developed",
     "tariff_structure": 2,
     "value": 8.5647,
-    "code": "757"
+    "code": "756"
   },
   {
     "ISO3": "CHE",
@@ -6957,7 +6957,7 @@
     "dev_status": "Developed",
     "tariff_structure": 3,
     "value": 19.9109,
-    "code": "757"
+    "code": "756"
   },
   {
     "ISO3": "SLB",
